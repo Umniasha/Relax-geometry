@@ -16,6 +16,11 @@
 		6B5581272A80D7F100A5CF5C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B5581252A80D7F100A5CF5C /* Main.storyboard */; };
 		6B5581292A80D7F500A5CF5C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6B5581282A80D7F500A5CF5C /* Assets.xcassets */; };
 		6B55812C2A80D7F500A5CF5C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B55812A2A80D7F500A5CF5C /* LaunchScreen.storyboard */; };
+		6B8FCB262A852684003236F2 /* ProcessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8FCB252A852684003236F2 /* ProcessViewController.swift */; };
+		6B934A192A85638700B62679 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B934A182A85638700B62679 /* MainViewController.swift */; };
+		6BD07EBD2A8655920042B9F6 /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6BD07EBC2A8655910042B9F6 /* Montserrat-Bold.ttf */; };
+		6BD07EC42A869CEC0042B9F6 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD07EC32A869CEC0042B9F6 /* SettingsViewController.swift */; };
+		6BD07EC62A86B1050042B9F6 /* RecordsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BD07EC52A86B1050042B9F6 /* RecordsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +34,12 @@
 		6B5581262A80D7F100A5CF5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6B5581282A80D7F500A5CF5C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6B55812B2A80D7F500A5CF5C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6B8FCB252A852684003236F2 /* ProcessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessViewController.swift; sourceTree = "<group>"; };
+		6B934A182A85638700B62679 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		6BD07EBC2A8655910042B9F6 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		6BD07EBE2A86563F0042B9F6 /* Relax-geometry-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Relax-geometry-Info.plist"; sourceTree = SOURCE_ROOT; };
+		6BD07EC32A869CEC0042B9F6 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		6BD07EC52A86B1050042B9F6 /* RecordsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,15 +72,21 @@
 		6B55811A2A80D7F100A5CF5C /* Relax geometry */ = {
 			isa = PBXGroup;
 			children = (
+				6BD07EBE2A86563F0042B9F6 /* Relax-geometry-Info.plist */,
 				6B55811B2A80D7F100A5CF5C /* AppDelegate.swift */,
 				6B55811D2A80D7F100A5CF5C /* GameScene.sks */,
 				6B55811F2A80D7F100A5CF5C /* Actions.sks */,
 				6B5581212A80D7F100A5CF5C /* GameScene.swift */,
 				6B1C71572A829DFB00D7D0A1 /* gameComponents.swift */,
 				6B5581232A80D7F100A5CF5C /* GameViewController.swift */,
+				6B934A182A85638700B62679 /* MainViewController.swift */,
+				6B8FCB252A852684003236F2 /* ProcessViewController.swift */,
+				6BD07EC32A869CEC0042B9F6 /* SettingsViewController.swift */,
 				6B5581252A80D7F100A5CF5C /* Main.storyboard */,
+				6BD07EC52A86B1050042B9F6 /* RecordsViewController.swift */,
 				6B5581282A80D7F500A5CF5C /* Assets.xcassets */,
 				6B55812A2A80D7F500A5CF5C /* LaunchScreen.storyboard */,
+				6BD07EBC2A8655910042B9F6 /* Montserrat-Bold.ttf */,
 			);
 			path = "Relax geometry";
 			sourceTree = "<group>";
@@ -134,6 +151,7 @@
 			files = (
 				6B5581272A80D7F100A5CF5C /* Main.storyboard in Resources */,
 				6B55811E2A80D7F100A5CF5C /* GameScene.sks in Resources */,
+				6BD07EBD2A8655920042B9F6 /* Montserrat-Bold.ttf in Resources */,
 				6B5581292A80D7F500A5CF5C /* Assets.xcassets in Resources */,
 				6B55812C2A80D7F500A5CF5C /* LaunchScreen.storyboard in Resources */,
 				6B5581202A80D7F100A5CF5C /* Actions.sks in Resources */,
@@ -148,9 +166,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				6B5581222A80D7F100A5CF5C /* GameScene.swift in Sources */,
+				6B8FCB262A852684003236F2 /* ProcessViewController.swift in Sources */,
+				6BD07EC62A86B1050042B9F6 /* RecordsViewController.swift in Sources */,
 				6B5581242A80D7F100A5CF5C /* GameViewController.swift in Sources */,
+				6B934A192A85638700B62679 /* MainViewController.swift in Sources */,
 				6B55811C2A80D7F100A5CF5C /* AppDelegate.swift in Sources */,
 				6B1C71582A829DFB00D7D0A1 /* gameComponents.swift in Sources */,
+				6BD07EC42A869CEC0042B9F6 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,6 +323,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = JMRR2M76BP;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Relax-geometry-Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -330,6 +353,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = JMRR2M76BP;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Relax-geometry-Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
