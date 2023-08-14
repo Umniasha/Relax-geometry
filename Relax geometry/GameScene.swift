@@ -415,27 +415,33 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         
         let randomFigure = figureArray.randomElement()
         if let randomFigure = randomFigure {
-            figure = SKSpriteNode(imageNamed: randomFigure)
-            let sizeFigure = container.size.height / 2.5
-            figure.size = CGSize(width: sizeFigure , height: sizeFigure)
-            figure.position.x = CGFloat.random(in: (frame.minX + figure.size.width)..<(frame.maxX - figure.size.width))
-            figure.run(SKAction.move(to: CGPoint(x: figure.position.x, y: -1000), duration:  figureSpeedInterval  ))
-            figure.position.y = frame.maxY + figure.size.height
-            figure.zPosition = 5
-            figure.physicsBody = SKPhysicsBody(circleOfRadius: 2)
-            figure.physicsBody?.isDynamic = true
+//            figure = SKSpriteNode(imageNamed: randomFigure)
+//          let sizeFigure = container.size.height / 2.5
+//            figure.size = CGSize(width: sizeFigure , height: sizeFigure)
+//            figure.position.x = CGFloat.random(in: (frame.minX + figure.size.width)..<(frame.maxX - figure.size.width))
+//            figure.run(SKAction.move(to: CGPoint(x: figure.position.x, y: -1000), duration:  figureSpeedInterval  ))
+//            figure.position.y = frame.maxY + figure.size.height
+//            figure.zPosition = 5
+//            figure.physicsBody = SKPhysicsBody(circleOfRadius: 2)
+//            figure.physicsBody?.isDynamic = true
+//
+//            figure.physicsBody?.categoryBitMask = PhysicsCategories.figure
+//            figure.physicsBody?.contactTestBitMask = PhysicsCategories.cell
+//            figure.physicsBody?.collisionBitMask = 0
+//            figure.physicsBody?.usesPreciseCollisionDetection = true
+//            figure.name = randomFigure
+//            addChild(figure)
+//
+//
+        let f = Figure(texture: randomFigure, name: randomFigure,
+                       sizeWidth: container.size.height / 2.5, sizeHeight: container.size.height / 2.5, zPozition: 5, positionX: CGFloat.random(in: (frame.minX + )..<(frame.maxX - figure.size.width)), positionY: frame.maxY + figure.size.height, runTo: CGPoint(x: figure.position.x, y: -1000), duration: figureSpeedInterval, physicCircleRadius: 2, isDynamic: true, categoryBitMask: PhysicsCategories.figure, contactBitMask: PhysicsCategories.cell, usesPreciseCollision: true)
             
-            figure.physicsBody?.categoryBitMask = PhysicsCategories.figure
-            figure.physicsBody?.contactTestBitMask = PhysicsCategories.cell
-            figure.physicsBody?.collisionBitMask = 0
-            figure.physicsBody?.usesPreciseCollisionDetection = true
-            figure.name = randomFigure
-            addChild(figure)
-
-            
+            Figure.init(texture: randomFigure, name: randomFigure,
+                    sizeWidth: container.size.height / 2.5, sizeHeight: container.size.height / 2.5, zPozition: 5, positionX: CGFloat.random(in: (frame.minX + figure.size.width)..<(frame.maxX - figure.size.width)), positionY: frame.maxY + figure.size.height, runTo: CGPoint(x: figure.position.x, y: -1000), duration: figureSpeedInterval, physicCircleRadius: 2, isDynamic: true, categoryBitMask: PhysicsCategories.figure, contactBitMask: PhysicsCategories.cell, usesPreciseCollision: true)
+            let figureTest = SKSpriteNode()
+            f.addObject(nameObject: figureTest, scene: self)
         }
        
-
     }
     
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {

@@ -119,7 +119,6 @@ for value in dict.values{
 struct PhysicsCategories {
     static let cell : UInt32 = 2
     static let figure : UInt32 = 1
-   
 }
 
 
